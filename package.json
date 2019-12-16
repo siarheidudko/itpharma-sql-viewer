@@ -1,0 +1,55 @@
+{
+	"name": "ITPharmaSQLViewer",
+	"version": "1.0.0",
+	"description": "ITPharma SQL Viewer (Wrapper for Microsoft SQL Server Management Studio)",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"build": "ERASE dist /F/Q&&electron-builder"
+	},
+	"repository": "https://github.com/siarheidudko/itpharma-sql-viewer",
+	"keywords": [
+		"Electron",
+		"sql",
+		"Microsoft SQL Server Management Studio"
+	],
+	"author": "Siarhei Dudko",
+	"license": "Apache-2.0",
+	"build": {
+		"appId": "com.itpharma.sqlviewer.app",
+		"productName": "ITPharma SQL Viewer",
+		"copyright": "Copyright © 2019 Siarhei Dudko",
+		"win": {
+			"icon": "ITPharmaSQLViewer.ico",
+			"artifactName": "${productName} v${version} Setup.${ext}",
+			"target": [
+				"nsis:ia32"
+			]
+		},
+		"files": [
+			"**/*",
+			"!dist${/*}",
+			"!dist${\\*}",
+			"!dist${\\*}",
+			"!connections.json",
+			"!vncviewer.exe",
+			"!errors.log",
+			"!store.dmp"
+		],
+		"extraResources": [
+			"connections.json"
+		]
+	},
+	"devDependencies": {
+		"electron": "^6.0.6"
+	},
+	"dependencies": {
+		"child_process": "^1.0.2",
+		"crypto": "^1.0.1",
+		"fs": "0.0.1-security",
+		"lodash": "^4.17.15",
+		"os": "^0.1.1",
+		"path": "^0.12.7",
+		"redux-cluster": "^1.10.0"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"ООО \"Тест\"": {
+		"ООО \"Тест\", Аптека 01": {
+			"host": "10.0.0.74",
+			"port": "1433",
+			"database": "aptekajet",
+			"user": "d1_link",
+			"password": "123nopass"
+		},
+		"ООО \"Тест\", Аптека 02": {
+			"host": "10.0.0.74",
+			"port": "1433",
+			"database": "aptekajet_back",
+			"user": "d1_link",
+			"password": "123nopass"
+		}
+	}
+}
