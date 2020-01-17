@@ -1,6 +1,6 @@
 {
 	"name": "ITPharmaSQLViewer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "ITPharma SQL Viewer (Wrapper for Microsoft SQL Server Management Studio)",
 	"main": "main.js",
 	"scripts": {
@@ -44,6 +44,7 @@
 		"electron": "^6.0.6"
 	},
 	"dependencies": {
+		"@sergdudko/objectstream": "^1.7.7",
 		"child_process": "^1.0.2",
 		"crypto": "^1.0.1",
 		"fs": "0.0.1-security",
